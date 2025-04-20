@@ -27,21 +27,21 @@ function next() {
         }
 
         vid.style.display = 'block';
-        setTimeout(() => {
-            body.style.color = 'white';
-            body.innerHTML = 'You have to trust me';
-            setTimeout(() => {
-                body.innerHTML = 'You do not want to see this';
-                setTimeout(() => {
-                    body.innerHTML = 'You do not want to see me';
-                }, 1750);
-                setTimeout(() => {
-                    body.style.backgroundColor = 'white';
-                }, 2000);
-            }, 2000);
-        }, 7500);
     }, t);
 }
 
-// vid.addEventListener('ended', () => {
-// });
+vid.addEventListener('play', () => {
+    setTimeout(() => {
+        body.style.color = 'white';
+        body.innerHTML = 'You have to trust me';
+        setTimeout(() => {
+            body.innerHTML = 'You do not want to see it';
+            setTimeout(() => {
+                body.innerHTML = 'You do not want to see me';
+            }, 1750);
+            setTimeout(() => {
+                body.style.backgroundColor = 'white';
+            }, 2000);
+        }, 2000);
+    }, 7500);
+});
