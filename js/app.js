@@ -27,7 +27,6 @@ function next() {
         }
 
         vid.style.display = 'block';
-        vid.play();
         setTimeout(() => {
             body.style.color = 'white';
             body.innerHTML = 'You have to trust me';
