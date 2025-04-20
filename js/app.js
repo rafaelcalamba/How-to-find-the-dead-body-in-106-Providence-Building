@@ -33,6 +33,9 @@ function next() {
             setTimeout(() => {
                 body.innerHTML = 'You do not want to see this';
                 setTimeout(() => {
+                    body.innerHTML = 'You do not want to see me';
+                }, 1750);
+                setTimeout(() => {
                     body.style.backgroundColor = 'white';
                 }, 2000);
             }, 2000);
